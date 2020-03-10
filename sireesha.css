@@ -1,0 +1,179 @@
+body
+{
+ background-image:url("https://cdn.pixabay.com/photo/2015/04/23/22/00/tree-736885__340.jpg");
+ background-repeat:no-repeat;
+
+ background-position:top center;
+ background-image:linear-gradient(to right,red,yellow);
+ 
+}
+p.normal
+{
+  font-style:italic;
+  color:green;
+  font-family:georgia;
+ direction:rtl;
+   letter-spacing:5px;
+    word-spacing:5px;
+  text-decoration:underline;
+  
+  text-transform:capitalize;
+}
+p.special
+{
+  font-style:bold;
+  color:orange;
+  font-size:20px;
+  font-size:small;
+  font-size:large;
+  direction:rtl;
+   letter-spacing:5px;
+    word-spacing:5px;
+   text-indent:1cm;
+    text-align:left;
+   text-decoration:blink;
+   text-shadow:8px 4px 8px green;
+}
+h1
+{
+    margin-top:200px;
+}
+ol
+{
+   font-size:20px;
+}
+img
+{
+  
+ box-shadow: 0 0 2px 1px rgba(0, 140, 186, 0.5);
+  border-radius: 10px;
+  height:200px;
+  opacity:0.5;
+ 
+}
+img:hover
+{ 
+  border:3px solid red;
+  height:100px;
+  
+  border-color:red green blue yellow;
+  border-top-style:dotted;
+  border-right-style:solid;
+  border-bottom-style:dotted;
+  border-left-style:solid;
+  margin:25px 50px 75px 100px;
+ 
+ opacity:1.0;
+ 
+}
+#id1{
+      text-decoration:underline;
+}
+p.three
+{
+  border-style:solid;
+  border-width:10px 20px 12px 40px;
+  border-color:red green blue yellow;
+
+}
+div
+{
+  padding:25px 50px 75px 100px;
+}
+#box
+{
+  margin:2cm;
+  padding:2px;
+  border-style:dashed;
+  border-color:green;
+  border-width:2px;
+}
+li
+{
+  display:inline;
+}
+span
+{
+  display:block;
+}
+span.a
+{
+  display:inline;
+  width:100px;
+  height:100px;
+  padding:5px;
+  border:1px solid blue;
+  background-color:yellow;
+}
+span.b
+{
+  display:inline-block;
+  width:100px;
+  height:250px;
+  padding:5px;
+  border:1px solid blue;
+  background-color:pink;
+}
+span.c
+{
+display:block;
+  width:100px;
+  height:250px;
+  padding:5px;
+  border:1px solid blue;
+  background-color:lightblue;
+}
+a
+{
+  display:inline;
+ 
+}
+a.b
+{
+
+  
+  padding:5px;
+ 
+}
+a.s
+{
+
+ 
+  padding:5px;
+ text-decoration:none;
+}
+a.h
+{
+   padding:2px;
+  border-style:solid;
+ }
+a.r
+{
+  padding:2px;
+  border-style:solid;
+  background-color:lightblue;
+}
+  
+a.b:hover
+{
+  color:red;
+}
+a.h:hover
+{
+  color:yellow;
+}
+a.s:active
+{
+  color:red;
+}
+p.special::first-line/*pseudo element*/
+{
+  font-style:italic;
+  color:blue;
+  font-family:monospace;
+}
+h1::selection
+{ 
+  color:orange;
+  background:yellow;
+}

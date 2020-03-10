@@ -177,3 +177,7 @@ h1::selection
   color:orange;
   background:yellow;
 }
+.si
+{
+  background-image:linear-gradient(to right,lightblue,lightgreen);
+ }

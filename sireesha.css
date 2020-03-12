@@ -48,21 +48,24 @@ img
  box-shadow: 0 0 2px 1px rgba(0, 140, 186, 0.5);
   border-radius: 10px;
   height:200px;
+  
+  
   opacity:0.5;
  
 }
 img:hover
 { 
   border:3px solid red;
-  height:100px;
-  
+  height:300px;
+  width:300px;
   border-color:red green blue yellow;
   border-top-style:dotted;
   border-right-style:solid;
   border-bottom-style:dotted;
   border-left-style:solid;
   margin:25px 50px 75px 100px;
- 
+  transition:width 2s,height 4s,transform 2s;
+  transform:rotate(180deg);
  opacity:1.0;
  
 }
@@ -179,5 +182,35 @@ h1::selection
 }
 .si
 {
-  background-image:linear-gradient(to right,lightblue,lightgreen);
+  background-image:radial-gradient(grey,lightgreen);
  }
+.di
+{
+ transition:width 2s,height 4s,transform 2s;
+ width:200px;
+ height:200px;
+
+}
+.di:hover
+{
+  width:100px;
+ height:100px;
+ background:orange;
+ transform:scale(1.5);
+
+}
+.an
+{
+ 
+
+ background-color:lightpink;
+ animation-name:example;
+ animation-duration:4s;
+ animation-iteration-count:infinite;
+ background-image:linear-gradient(lightgreen,lightblue);
+}
+@keyframes example
+{
+  from{background-image:linear-gradient(green,lightblue);}
+  to{background-image:linear-gradient(lightpink,beige);}
+}
